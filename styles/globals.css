@@ -1233,9 +1233,10 @@ header.sticky {
 
 .procard {
     position: relative;
+    aspect-ratio: 16/9;
     width: 48%;
-    height: 450px;
-    padding: 3rem;
+    /* height: 450px; */
+    padding: 1rem;
     padding-bottom: 0;
     background-color: #140c1c;
     margin-top: 3rem;
@@ -4518,7 +4519,7 @@ header.sticky {
     }
 
     .procard {
-        height: 350px;
+        /* height: 350px; */
     }
 
     .projectslugimg {

@@ -41,6 +41,7 @@ export default function Home() {
       link: "https://example.com/project1",
       image: "/img/dermatology_clinic.jpeg",
       category: "code",
+      slug: "dr-safdarian-clinic"
     },
     {
       title: "Climate App Design",
@@ -48,6 +49,7 @@ export default function Home() {
       link: "https://example.com/project2",
       image: "/img/climate_app.png",
       category: "design",
+      slug: "climate-app-design"
     }
   ]
 
@@ -150,7 +152,7 @@ export default function Home() {
           </div>
           <div className="projects_cards">
             {filteredProjects.map((project, index) => (
-              <Link key={index} href='/' className="procard">
+              <Link key={index} href={`/projects/${project.slug}`} className="procard">
                 <div className="proimgbox">
                   <img src={project.image} alt={project.title} />
                 </div>
@@ -290,9 +292,9 @@ export default function Home() {
       </section>
 
       {/* Recent Blogs */}
-      <section className="recentblogs">
+      {/* <section className="recentblogs">
 
-      </section>
+      </section> */}
 
     </>
   );

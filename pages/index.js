@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { BiDownload } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
@@ -10,6 +11,8 @@ import { PiGraduationCap } from "react-icons/pi";
 
 export default function Home() {
 
+
+  const { assetPrefix } = useRouter();
 
   // active service background color change
   const [activeIndex, setActiveIndex] = useState(0)
@@ -107,7 +110,7 @@ export default function Home() {
             </div>
             <div className="heroimageright">
               <div className="hero_img_box">
-                <img src="/img/me.png" alt="coder" />
+                <img src={`${assetPrefix}/img/me.png`} alt="coder" />
               </div>
             </div>
           </div>

@@ -8,9 +8,9 @@ import { GoArrowUpRight } from 'react-icons/go';
 import { LuMedal } from "react-icons/lu";
 import { PiGraduationCap } from "react-icons/pi";
 
-export default function Home() {
+const assetPrefix = process.env.assetPrefix || '';
 
-  const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX || '';
+export default function Home() {
 
   // active service background color change
   const [activeIndex, setActiveIndex] = useState(0)
@@ -95,7 +95,7 @@ export default function Home() {
               <span className="hero_sb_title">I am Samin Labbaf</span>
               <h1 className="hero_title">Web Developer + <br /><span className="typed-text">UI Designer</span></h1>
               <div className="hero_img_box heroimgbox">
-                <img src="/img/me.png" alt="coder" />
+                <img src={`${assetPrefix}/img/me.png`} alt="coder" />
               </div>
               <div className="lead">I’m a Web Developer specializing in Next.js, Material UI, and Figma. I create responsive, user-friendly interfaces and design intuitive, visually appealing web experiences that meet client needs.</div>
               <div className="hero_btn_box">

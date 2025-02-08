@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { BiDownload } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
@@ -11,8 +10,7 @@ import { PiGraduationCap } from "react-icons/pi";
 
 export default function Home() {
 
-
-  const { assetPrefix } = useRouter();
+  const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX || '';
 
   // active service background color change
   const [activeIndex, setActiveIndex] = useState(0)

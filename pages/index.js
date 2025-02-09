@@ -7,6 +7,8 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { GoArrowUpRight } from 'react-icons/go';
 import { LuMedal } from "react-icons/lu";
 import { PiGraduationCap } from "react-icons/pi";
+import me from '../public/img/me.png';
+import Image from "next/image";
 
 const assetPrefix = process.env.assetPrefix || '';
 
@@ -108,7 +110,7 @@ export default function Home() {
             </div>
             <div className="heroimageright">
               <div className="hero_img_box">
-                <img src='../public/img/me.png' alt="me" />
+                <Image src={me} alt="me" />
               </div>
             </div>
           </div>

@@ -65,7 +65,7 @@ export default function Header() {
         <header>
             <nav className="container flex flex-sb">
                 <nav className="logo flex gap-2">
-                    <Link href="/"><img src={`/img/${darkMode ? 'white' : 'logo'}.png`} alt="logo" /></Link>
+                    <Link href="/"><h1>S.L</h1></Link>
                     <h2>Labbafsamin@gmail.com</h2>
                 </nav>
                 <div className="navlist flex gap-2">
@@ -85,7 +85,6 @@ export default function Header() {
                 <div className={mobile ? "mobilenavlist active" : "mobilenavlist"}>
                     <span className={mobile ? "active" : ""} onClick={handleMobileClose}></span>
                     <div className="mobilelogo">
-                        <img src="/img/white.png" alt="logo" />
                         <h2>Samin.L</h2>
                     </div>
                     <ul className="flex gap-1 flex-col flex-left mt-3" onClick={() => handleMobileClose()}>

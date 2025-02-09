@@ -10,6 +10,18 @@ import { PiGraduationCap } from "react-icons/pi";
 import me from '../public/img/me.png';
 import Image from "next/image";
 import next from '../public/img/nextjs.svg';
+import reactjs from '../public/img/reactjs.svg';
+import js from '../public/img/js.svg';
+import typescript from '../public/img/typescript.svg';
+import redux from '../public/img/redux.svg';
+import sql from '../public/img/sql.svg';
+import github from '../public/img/github.svg';
+import vscode from '../public/img/vscode.svg';
+import postman from '../public/img/postman.svg';
+import figma from '../public/img/figma.svg';
+import mui from '../public/img/mui.svg';
+import dermatology_clinic from '../public/img/dermatology_clinic.jpeg';
+import climate_app from '../public/img/climate_app.png';
 
 export default function Home() {
 
@@ -41,7 +53,7 @@ export default function Home() {
       title: "Dr Safdarian Clinic",
       description: "This is a description of project 1",
       link: "https://example.com/project1",
-      image: "/img/dermatology_clinic.jpeg",
+      image: dermatology_clinic,
       category: "code",
       slug: "dr-safdarian-clinic"
     },
@@ -49,7 +61,7 @@ export default function Home() {
       title: "Climate App Design",
       description: "This is a description of project 2",
       link: "https://example.com/project2",
-      image: "/img/climate_app.png",
+      image: climate_app,
       category: "design",
       slug: "climate-app-design"
     }
@@ -156,7 +168,7 @@ export default function Home() {
             {filteredProjects.map((project, index) => (
               <Link key={index} href={`/projects/${project.slug}`} className="procard">
                 <div className="proimgbox">
-                  <img src={project.image} alt={project.title} />
+                  <Image src={project.image} alt={project.title} />
                 </div>
                 <div className="procontentbox">
                   <h2>{project.title}</h2>
@@ -231,61 +243,61 @@ export default function Home() {
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/reactjs.svg" alt="ReactJS" />
+                <Image src={reactjs} alt="ReactJS" />
               </div>
               <p className="text-center">ReactJS</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/js.svg" alt="javascript" />
+                <Image src={js} alt="javascript" />
               </div>
               <p className="text-center">JavaScript</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/typescript.svg" alt="typescript" />
+                <Image src={typescript} alt="typescript" />
               </div>
               <p className="text-center">TypeScript</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/redux.svg" alt="redux" />
+                <Image src={redux} alt="redux" />
               </div>
               <p className="text-center">Redux</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/sql.svg" alt="SQL" />
+                <Image src={sql} alt="SQL" />
               </div>
               <p className="text-center">SQL</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/github.svg" alt="github" />
+                <Image src={github} alt="github" />
               </div>
               <p className="text-center">GitHub</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/vscode.svg" alt="vs code" />
+                <Image src={vscode} alt="vs code" />
               </div>
               <p className="text-center">VS Code</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/postman.svg" alt="Postman" />
+                <Image src={postman} alt="Postman" />
               </div>
               <p className="text-center">Postman</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/figma.svg" alt="Figma" />
+                <Image src={figma} alt="Figma" />
               </div>
               <p className="text-center">Figma</p>
             </div>
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/mui.svg" alt="Material UI" />
+                <Image src={mui} alt="Material UI" />
               </div>
               <p className="text-center">Material UI</p>
             </div>

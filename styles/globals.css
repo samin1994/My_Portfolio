@@ -1530,6 +1530,7 @@ header.sticky {
 
 .mys_card img {
     max-width: 70px;
+    height: auto;
     /* margin: 0 auto 30px; */
     transition: 0.3s;
 }

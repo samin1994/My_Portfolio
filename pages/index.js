@@ -11,8 +11,6 @@ import me from '../public/img/me.png';
 import Image from "next/image";
 import next from '../public/img/nextjs.svg';
 
-const assetPrefix = process.env.assetPrefix || '';
-
 export default function Home() {
 
   // active service background color change

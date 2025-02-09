@@ -731,19 +731,6 @@ header.sticky {
     margin-bottom: -5%;
 }
 
-.hero_img_box img {
-    border-radius: 38px;
-    transform: rotate(4.29deg);
-    position: relative;
-    border: 2px solid var(--dark-site-secondary);
-    transition: 0.3s;
-}
-
-.hero_img_box img:hover {
-    border: 2px solid var(--main-site-color);
-    transform: rotate(0);
-}
-
 
 .hero .intro_text svg {
     font-family: "Russo One", sans-serif;

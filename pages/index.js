@@ -95,7 +95,7 @@ export default function Home() {
             <div className="heroinfoleft">
               <span className="hero_sb_title">I am Samin Labbaf</span>
               <h1 className="hero_title">Web Developer + <br /><span className="typed-text">UI Designer</span></h1>
-              <div className="hero_img_box heroimgbox">
+              <div className="heroimgbox">
                 <Image src={me} alt="me" />
               </div>
               <div className="lead">I’m a Web Developer specializing in Next.js, Material UI, and Figma. I create responsive, user-friendly interfaces and design intuitive, visually appealing web experiences that meet client needs.</div>
@@ -108,7 +108,7 @@ export default function Home() {
               </div>
             </div>
             <div className="heroimageright">
-              <div className="hero_img_box">
+              <div>
                 <Image src={me} alt="me" />
               </div>
             </div>

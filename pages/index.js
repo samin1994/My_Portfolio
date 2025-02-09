@@ -9,6 +9,7 @@ import { LuMedal } from "react-icons/lu";
 import { PiGraduationCap } from "react-icons/pi";
 import me from '../public/img/me.png';
 import Image from "next/image";
+import next from '../public/img/nextjs.svg';
 
 const assetPrefix = process.env.assetPrefix || '';
 
@@ -226,7 +227,7 @@ export default function Home() {
           <div className="myskils_cards">
             <div className="mys_card">
               <div className="mys_inner">
-                <img src="/img/nextjs.svg" alt="nextJS" />
+                <Image src={next} alt="nextJS" />
               </div>
               <p className="text-center">NextJS</p>
             </div>

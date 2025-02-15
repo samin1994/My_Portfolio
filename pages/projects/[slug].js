@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 
@@ -50,7 +51,7 @@ export default function projectslug() {
             <div className="projectslugimg">
                 <div className="container">
                     <div className="proslugimg">
-                        <img src={project.image} alt="" />
+                        <Image src={project.image} alt="" />
                     </div>
                     <div className="projectsluginfo">
                         <div className="leftmainproinfo">

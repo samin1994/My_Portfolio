@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import climate_app from "../../public/img/climate_app.png";
-import dr_safdarian from "../../public/img/dermatology_clinic.jpeg";
+import dr_safdarian from "../../public/img/dermatology_clinic.png";
 
 export default function projectslug() {
 

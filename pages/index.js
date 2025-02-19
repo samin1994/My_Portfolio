@@ -22,6 +22,7 @@ import figma from '../public/img/figma.svg';
 import mui from '../public/img/mui.svg';
 import dermatology_clinic from '../public/img/dermatology_clinic.jpeg';
 import climate_app from '../public/img/climate_app.png';
+// import resume from '../public/files/resume.pdf';
 
 export default function Home() {
 
@@ -112,7 +113,7 @@ export default function Home() {
               </div>
               <div className="lead">I’m a Web Developer specializing in Next.js, Material UI, and Figma. I create responsive, user-friendly interfaces and design intuitive, visually appealing web experiences that meet client needs.</div>
               <div className="hero_btn_box">
-                <Link href='/public/files/resume.pdf' target="_blank" className="download_cv">Download CV<BiDownload /></Link>
+                <Link href='https://samin1994.github.io/My_Portfolio/files/resume.pdf' target="_blank" rel="noopener noreferrer" className="download_cv">Download CV<BiDownload /></Link>
                 <ul className="hero_social">
                   <li><a target="_blank" href="https://www.linkedin.com/in/samin-labbaf"><GrLinkedinOption /></a></li>
                   <li><a target="_blank" href="https://github.com/samin1994"><FaGithub /></a></li>

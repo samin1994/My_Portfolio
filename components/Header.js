@@ -72,7 +72,7 @@ export default function Header() {
                     <ul className="flex gap-2">
                         <li><Link href="/" onClick={() => handleLinkClick('/')} className={activeLink === '/' ? "active" : ""}>Home</Link></li>
                         <li><Link href="/projects" onClick={() => handleLinkClick('projects')} className={activeLink === '/projects' ? "active" : ""}>Projects</Link></li>
-                        <li><Link href="/contact" onClick={() => handleLinkClick('/contact')} className={activeLink === '/contact' ? "active" : ""}>Contact</Link></li>
+                        {/* <li><Link href="/contact" onClick={() => handleLinkClick('/contact')} className={activeLink === '/contact' ? "active" : ""}>Contact</Link></li> */}
                     </ul>
                     <div className="darkmodetoggle" onClick={() => toggleDarkMode()}>
                         {darkMode ? <IoMoonSharp /> : <LuSun />}
@@ -90,7 +90,7 @@ export default function Header() {
                     <ul className="flex gap-1 flex-col flex-left mt-3" onClick={() => handleMobileClose()}>
                         <li><Link href="/" onClick={() => handleLinkClick('/')} className={activeLink === '/' ? "active" : ""}>Home</Link></li>
                         <li><Link href="/projects" onClick={() => handleLinkClick('projects')} className={activeLink === '/projects' ? "active" : ""}>Projects</Link></li>
-                        <li><Link href="/contact" onClick={() => handleLinkClick('/contact')} className={activeLink === '/contact' ? "active" : ""}>Contact</Link></li>
+                        {/* <li><Link href="/contact" onClick={() => handleLinkClick('/contact')} className={activeLink === '/contact' ? "active" : ""}>Contact</Link></li> */}
                     </ul>
                     <p>Copyright &copy; 2025 | Samin Labbaf</p>
                 </div>

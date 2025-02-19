@@ -77,7 +77,7 @@ export default function Header() {
                     <div className="darkmodetoggle" onClick={() => toggleDarkMode()}>
                         {darkMode ? <IoMoonSharp /> : <LuSun />}
                     </div>
-                    <button><Link href={'/contact'}>Hire Me!</Link></button>
+                    {/* <button><Link href={'/contact'}>Hire Me!</Link></button> */}
                     <div className="mobiletogglesvg" onClick={handleMobileOpen}>
                         <HiMiniBars3BottomRight />
                     </div>

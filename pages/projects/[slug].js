@@ -23,7 +23,7 @@ export default function projectslug() {
         {
             title: "Climate App Design",
             description: "For ObsidianPulse, I designed a minimalist, accessible interface in Figma, focusing on intuitive navigation and clear visual hierarchy. I created interactive prototypes to showcase key features while considering accessibility through color contrast and legible typography. This project highlights my skills in Figma design and prototyping, ensuring an engaging, user-friendly experience.",
-            link: "https://example.com/project2",
+            // link: "https://example.com/project2",
             image: climate_app,
             category: "design",
             skills: ["Figma", "Prototyping"],
@@ -59,7 +59,7 @@ export default function projectslug() {
                         <div className="leftmainproinfo">
                             <h1>{project.title}</h1>
                             <p>{project.description}</p>
-                            <a target="_blank" href={project.link}>Live Preview</a>
+                            {project.link && <a target="_blank" href={project.link}>Live Preview</a>}
                         </div>
                         <div className="rightmainproinfo">
                             <div>

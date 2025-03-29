@@ -306,10 +306,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Recent Blogs */}
-      {/* <section className="recentblogs">
-
-      </section> */}
+      {/* About Me */}
+      <section className="aboutMe">
+        <div className="container">
+          <div className="section_title" id="about">
+            <h2>About Me</h2>
+            <p>
+              I’m <strong>Samin Labbaf</strong>, a front-end developer passionate about creating modern, responsive websites with seamless user experiences. I have <strong>over a year of experience</strong>, working with technologies like <strong>React, Next.js, and Material UI</strong>, and collaborating with big clients on various projects, including freelance work.
+            </p>
+            <p>
+              Beyond coding, I enjoy <strong>dancing, playing the piano, biking</strong>, and spending time with <strong>cats</strong>. I’m also deeply interested in <strong>AI (mocking human behavior)</strong> and <strong>IoT</strong>, always eager to explore how these technologies can be leveraged to solve real-world problems.
+            </p>
+            <p>
+              My ultimate goal is to start my own business based on my ideas, using an up-to-date tech stack that I have mastered over time. Driven by curiosity and a desire to innovate, I’m constantly learning and refining my skills to stay at the forefront of technology.
+            </p>
+          </div>
+        </div>
+      </section>
 
     </>
   );

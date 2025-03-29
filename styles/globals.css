@@ -833,6 +833,61 @@ header.sticky {
     color: var(--main-site-color);
 }
 
+.section_title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 700px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section_title h2 {
+    font-size: 45px;
+    background: linear-gradient(to right, var(--main-site-color) 0%, #dddddd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark .section_title h2 {
+    font-size: 45px;
+    background: linear-gradient(to right, var(--main-site-color) 0%, var(--dark-site-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section_title p {
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    color: #999;
+}
+
+.dark .section_title p {
+    color: var(--dark-black);
+}
+
+strong {
+    background: linear-gradient(to right, var(--main-site-color) 0%, #dddddd 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
 
 
 /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
@@ -1558,6 +1613,20 @@ header.sticky {
 .mys_card p {
     color: var(--main-site-color);
     font-size: 18px;
+}
+
+.aboutMe {
+    position: relative;
+    padding: 120px 1rem;
+    background: #0f0715;
+}
+
+#about {
+    max-width: 90%
+}
+
+#about p {
+    line-height: 1.5;
 }
 
 
@@ -4777,6 +4846,7 @@ header.sticky {
         flex-direction: column;
         gap: 2rem;
     }
+
 }
 
 

@@ -1342,6 +1342,28 @@ strong {
     animation: rotate 0.3s linear forwards;
 }
 
+.disabled {
+    opacity: 0.6;
+    cursor: auto;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #555;
+    font-size: 1rem;
+}
+
+.leftmainproinfo p.caption {
+    font-size: 0.9rem;
+    cursor: default;
+    color: var(--main-site-color);
+    margin-top: 0.5rem;
+}
+
+.disabled:hover {
+    opacity: 0.6;
+}
+
 @keyframes rotate {
     from {
         transform: translateY(-50%) rotate(0deg);

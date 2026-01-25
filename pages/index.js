@@ -113,7 +113,7 @@ export default function Home() {
               </div>
               <div className="lead">I’m a Web Developer specializing in Next.js, Material UI, and Figma. I create responsive, user-friendly interfaces and design intuitive, visually appealing web experiences that meet client needs.</div>
               <div className="hero_btn_box">
-                <Link href='https://samin1994.github.io/My_Portfolio/files/resume.pdf' target="_blank" rel="noopener noreferrer" className="download_cv">Download CV<BiDownload /></Link>
+                <Link href='https://samin1994.github.io/My_Portfolio/files/samin_Labbaf_CV.pdf' target="_blank" rel="noopener noreferrer" className="download_cv">Download CV<BiDownload /></Link>
                 <ul className="hero_social">
                   <li><a target="_blank" href="https://www.linkedin.com/in/samin-labbaf"><GrLinkedinOption /></a></li>
                   <li><a target="_blank" href="https://github.com/samin1994"><FaGithub /></a></li>
@@ -191,6 +191,11 @@ export default function Home() {
             </div>
             <div className="exper_cards">
               <div className="exper_card">
+                <span>May 2025 – Sep 2025</span>
+                <h2>Inner Compass Well-being</h2>
+                <p>UI UX Designer Intern</p>
+              </div>
+              <div className="exper_card">
                 <span>Jun 2021 – Aug 2021</span>
                 <h2>Ant Coders</h2>
                 <p>Front-End Developer</p>
@@ -214,12 +219,12 @@ export default function Home() {
             </div>
             <div className="exper_cards">
               <div className="exper_card">
-                <span>Sep 2024 - Present</span>
+                <span>Sep 2024 - Aug 2025</span>
                 <h2>George Brown College, Toronto, Ontario</h2>
                 <p>Web Development (Front-End Design) | Ontario College Graduate Certificate</p>
               </div>
               <div className="exper_card">
-                <span>Jan 2021 – Apr 2021</span>
+                <span>Sep 2012 – Feb 2018</span>
                 <h2>Amirkabir University of Technology</h2>
                 <p>Information Technology | Bachelor of Science</p>
               </div>

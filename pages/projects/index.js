@@ -34,12 +34,14 @@ export default function projects() {
         if (selectedCategory === 'all') {
             setFilteredProjects(projects)
         } else if (selectedCategory === 'code') {
-            setFilteredProjects(projects.filter(project => project.category === 'code'))
+            setFilteredProjects(projects.filter(project => project.category.includes('code')))
         }
         else if (selectedCategory === 'design') {
-            setFilteredProjects(projects.filter(project => project.category === 'design'))
+            setFilteredProjects(projects.filter(project => project.category.includes('design')))
         }
     }, [selectedCategory])
+
+    console.log(filteredProjects)
 
 
     return <>

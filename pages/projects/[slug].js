@@ -15,11 +15,11 @@ export default function projectslug() {
             description: "I designed high-fidelity pages for Dr. Negin Safdarian's clinic using Figma, followed by developing a responsive website with Next.js and Material UI. The site is optimized for SEO with semantic HTML and server-side rendering (SSR), ensuring faster load times and enhanced search engine visibility.",
             link: "https://www.neginsafdarian.com",   // broken url 
             image: dr_safdarian,
-            category: "code",
+            category: "code & design",
             skills: ["Figma", "Next.js", "Material UI"],
             date: "April 2023",
             slug: "dr-safdarian-clinic",
-            designLink: "https://www.figma.com/file/your-figma-link" // replace with your Figma link or screenshots
+            // designLink: "https://www.figma.com/file/your-figma-link" // replace with your Figma link or screenshots
         },
         {
             title: "Climate App Design",
@@ -61,14 +61,7 @@ export default function projectslug() {
                                 CHANGED PART: Disabled Live Preview button with caption
                                 ---------------------------- */}
                             {project.link && project.title === "Dr Safdarian Clinic" ? (
-                                <div className="live-preview-wrapper">
-                                    <button className="disabled">
-                                        Live Preview (Unavailable)
-                                    </button>
-                                    <p className="caption">
-                                        Live demo temporarily unavailable due to Iran internet blackout.
-                                    </p>
-                                </div>
+                                project.link && <a target="_blank" rel="noopener noreferrer" href={project.link}>Live Preview</a>
                             ) : (
                                 project.link && <a target="_blank" rel="noopener noreferrer" href={project.link}>Live Preview</a>
                             )}

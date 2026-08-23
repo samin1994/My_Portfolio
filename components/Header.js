@@ -66,7 +66,7 @@ export default function Header() {
             <nav className="container flex flex-sb">
                 <nav className="logo flex gap-2">
                     <Link href="/"><h1>S.L</h1></Link>
-                    <h2>Labbafsamin@gmail.com</h2>
+                    <Link href="mailto:labbafsamin@gmail.com"><h2>Labbafsamin@gmail.com</h2></Link>
                 </nav>
                 <div className="navlist flex gap-2">
                     <ul className="flex gap-2">
